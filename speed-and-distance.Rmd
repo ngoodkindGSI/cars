@@ -6,6 +6,7 @@ date: "2022-09-29"
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
 ```
 
 ## R Markdown
@@ -16,6 +17,7 @@ When you click the **Knit** button a document will be generated that includes bo
 
 ```{r cars}
 summary(cars)
+ggplot(cars, aes(speed,dist))+geom_point()
 ```
 
 ## Including Plots
